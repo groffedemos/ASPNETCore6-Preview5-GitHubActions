@@ -52,7 +52,7 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Deployment no Azure App Service (Ambiente de Testes)
-        uses: Azure/webapps-deploy@v2
+        uses: Azure/webapps-deploy@v2.2.3
         with:
           app-name: ${{ env.NOME_WEBAPP }}
           package: ${{ env.NOME_DIR_PUBLICACAO }}
